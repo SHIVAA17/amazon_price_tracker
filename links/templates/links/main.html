@@ -38,14 +38,14 @@
             <div class="card mt-3">
                 <div class="card-header">
                     <h5>{{item.name}}</h5>
-                    <a href="{% url 'delete' item.pk %}"><button class="btn btn-danger">delete?</button></a>
+                    <a href="{% url 'delete' item.pk %}"><button class="btn btn-danger">Delete</button></a>
                 </div>
                 <div class="card-body">
                     <div class="blockquote">
                         <div>current price (Rs): {{item.current_price}}</div>
                         <div>old price (Rs): {{item.old_price}}</div>
                         <div>difference (Rs): {{item.price_difference|colorize}}</div>
-                        <div>link: <a href="{{item.url}}">{{item.url}}</a></div>
+                        <div>link: <a href="{{item.url}}">{{item.url}}<button class = "btn btn-dark btn-lg">Buy On Amazon</button></a> </div>
                     </div>
                 </div>
             </div>
